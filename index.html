@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mahadi Hasan | Digital Marketing & Ads Specialist</title>
+
+  <meta name="description"
+    content="Mahadi Hasan is a Digital Marketing & Ads Specialist specializing in Google Ads, Meta Ads, E-commerce Marketing, Lead Generation, Tracking, SEO and CRO.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #080b14;
+      --bg2: #0d1220;
+      --card: #111827;
+      --card2: #151c2d;
+      --text: #ffffff;
+      --muted: #9ca8bc;
+      --blue: #4f7cff;
+      --purple: #8b5cf6;
+      --cyan: #00d9ff;
+      --pink: #ff4ecd;
+      --green: #22c55e;
+      --orange: #ff9f43;
+      --border: rgba(255,255,255,.09);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(79,124,255,.16), transparent 30%),
+        radial-gradient(circle at 90% 15%, rgba(139,92,246,.14), transparent 28%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+    }
+
+    /* NAVBAR */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: rgba(8,11,20,.78);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: 23px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .logo span {
+      color: var(--cyan);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: #c8d0df;
+      font-size: 14px;
+      font-weight: 600;
+      transition: .3s;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    .nav-btn {
+      padding: 11px 18px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--blue), var(--purple));
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 760px;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      padding: 8px 13px;
+      border: 1px solid rgba(0,217,255,.25);
+      background: rgba(0,217,255,.07);
+      border-radius: 999px;
+      color: #73eaff;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: clamp(44px, 6vw, 78px);
+      line-height: 1.02;
+      letter-spacing: -4px;
+      margin-bottom: 24px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(
+        90deg,
+        #4f7cff,
+        #b36cff,
+        #ff4ecd,
+        #00d9ff
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: var(--muted);
+      font-size: 18px;
+      margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 22px;
+      border-radius: 12px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: .3s;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--blue), var(--purple));
+      box-shadow: 0 10px 35px rgba(79,124,255,.25);
+    }
+
+    .btn-secondary {
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.04);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    /* PROFILE */
+
+    .profile-area {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .profile-card {
+      width: 390px;
+      height: 470px;
+      position: relative;
+      border-radius: 32px;
+      padding: 12px;
+      background: linear-gradient(
+        135deg,
+        #4f7cff,
+        #8b5cf6,
+        #ff4ecd,
+        #00d9ff
+      );
+      transform: rotate(2deg);
+      box-shadow: 0 30px 90px rgba(79,124,255,.22);
+    }
+
+    .profile-inner {
+      width: 100%;
+      height: 100%;
+      background: #101521;
+      border-radius: 25px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .profile-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-placeholder {
+      display: none;
+      height: 100%;
+      place-items: center;
+      font-size: 100px;
+      font-weight: 800;
+      background:
+        radial-gradient(circle at 30% 30%, #4f7cff, transparent 40%),
+        linear-gradient(135deg,#141b2e,#080b14);
+    }
+
+    .floating-card {
+      position: absolute;
+      background: rgba(17,24,39,.92);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(15px);
+      padding: 15px 18px;
+      border-radius: 16px;
+      box-shadow: 0 20px 50px rgba(0,0,0,.3);
+    }
+
+    .float-one {
+      left: -40px;
+      bottom: 40px;
+    }
+
+    .float-two {
+      right: -35px;
+      top: 55px;
+    }
+
+    .floating-card strong {
+      display: block;
+      font-size: 18px;
+    }
+
+    .floating-card small {
+      color: var(--muted);
+    }
+
+    /* SECTION */
+
+    section {
+      padding: 110px 0;
+    }
+
+    .section-heading {
+      max-width: 700px;
+      margin-bottom: 55px;
+    }
+
+    .section-label {
+      color: var(--cyan);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .section-heading h2 {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: clamp(34px, 5vw, 52px);
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .about-box {
+      padding: 32px;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: linear-gradient(
+        145deg,
+        rgba(79,124,255,.08),
+        rgba(139,92,246,.05)
+      );
+    }
+
+    .about-box h3 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .about-box p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .experience-number {
+      font-size: 60px;
+      font-weight: 800;
+      background: linear-gradient(135deg,#4f7cff,#ff4ecd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* SERVICES */
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      padding: 28px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.035);
+      border-radius: 22px;
+      transition: .35s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card:before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: var(--service-color);
+      filter: blur(60px);
+      opacity: .15;
+      right: -20px;
+      top: -20px;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      border-color: rgba(255,255,255,.2);
+      background: rgba(255,255,255,.06);
+    }
+
+    .service-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: rgba(255,255,255,.07);
+      margin-bottom: 22px;
+    }
+
+    .service-icon img {
+      width: 34px;
+      height: 34px;
+    }
+
+    .service-card h3 {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* SKILLS */
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid var(--border);
+      color: #dce3f1;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .skill img {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* CASE STUDIES */
+
+    .case-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 20px;
+    }
+
+    .case-card {
+      padding: 30px;
+      border-radius: 24px;
+      border: 1px solid var(--border);
+      background: var(--card);
+    }
+
+    .case-tag {
+      color: var(--cyan);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .case-card h3 {
+      font-size: 24px;
+      margin: 12px 0;
+    }
+
+    .case-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* PROCESS */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 18px;
+    }
+
+    .process-card {
+      padding: 25px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.035);
+    }
+
+    .process-number {
+      font-size: 40px;
+      font-weight: 800;
+      color: var(--blue);
+      margin-bottom: 12px;
+    }
+
+    .process-card h3 {
+      margin-bottom: 8px;
+    }
+
+    .process-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 75px 50px;
+      border-radius: 30px;
+      text-align: center;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(0,217,255,.22), transparent 35%),
+        radial-gradient(circle at 80% 80%, rgba(255,78,205,.22), transparent 35%),
+        linear-gradient(135deg,#101a38,#17112b);
+      border: 1px solid var(--border);
+    }
+
+    .cta h2 {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: clamp(35px,5vw,55px);
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto 28px;
+    }
+
+    /* CONTACT */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 18px;
+    }
+
+    .contact-card {
+      padding: 25px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: rgba(255,255,255,.035);
+    }
+
+    .contact-card small {
+      color: var(--muted);
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 40px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .socials {
+      display: flex;
+      gap: 10px;
+    }
+
+    .socials a {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: rgba(255,255,255,.04);
+    }
+
+    .socials img {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width: 900px) {
+      .hero-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-area {
+        order: -1;
+      }
+
+      .services-grid,
+      .case-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media(max-width: 600px) {
+      .hero {
+        padding-top: 60px;
+      }
+
+      .hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .profile-card {
+        width: 300px;
+        height: 370px;
+      }
+
+      .float-one {
+        left: -10px;
+      }
+
+      .float-two {
+        right: -10px;
+      }
+
+      .services-grid,
+      .case-grid,
+      .process-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 75px 0;
+      }
+
+      .cta {
+        padding: 50px 25px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <nav>
+    <div class="container nav-inner">
+
+      <a href="#" class="logo">
+        Mahadi<span>.</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <a href="#contact" class="nav-btn">
+        Let's Talk
+      </a>
+
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+
+  <header class="hero">
+
+    <div class="container hero-grid">
+
+      <div>
+
+        <div class="badge">
+          ● Digital Marketing & Ads Specialist
+        </div>
+
+        <h1>
+          I Help Businesses
+          <span class="gradient-text">
+            Grow Online.
+          </span>
+        </h1>
+
+        <p>
+          I build and optimize performance-driven marketing campaigns
+          for e-commerce brands, service businesses and lead generation
+          campaigns using data, strategy and conversion-focused marketing.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#work" class="btn btn-primary">
+            View My Work →
+          </a>
+
+          <a href="#contact" class="btn btn-secondary">
+            Work With Me
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="profile-area">
+
+        <div class="profile-card">
+
+          <div class="profile-inner">
+
+            <img
+              src="profile.jpg"
+              alt="Mahadi Hasan"
+              onerror="this.style.display='none';document.getElementById('profilePlaceholder').style.display='grid';"
+            >
+
+            <div
+              id="profilePlaceholder"
+              class="profile-placeholder">
+              MH
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="floating-card float-one">
+          <strong>Ads + Strategy</strong>
+          <small>Data-driven marketing</small>
+        </div>
+
+        <div class="floating-card float-two">
+          <strong>Google + Meta</strong>
+          <small>Performance Marketing</small>
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <div class="container">
+
+      <div class="about-grid">
+
+        <div>
+
+          <div class="section-label">
+            About Me
+          </div>
+
+          <h2>
+            Marketing is more than just running ads.
+          </h2>
+
+        </div>
+
+        <div class="about-box">
+
+          <h3>
+            I'm Mahadi Hasan.
+          </h3>
+
+          <p>
+            I'm a Digital Marketing & Ads Specialist focused on
+            performance marketing, paid advertising, e-commerce,
+            lead generation and conversion tracking.
+          </p>
+
+          <p>
+            My approach combines campaign strategy, audience targeting,
+            creative testing, conversion tracking and continuous
+            optimization to build marketing systems that can be measured
+            and improved.
+          </p>
+
+          <div class="experience-number">
+            Ads • Data • Growth
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+
+  <section id="services">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          What I Do
+        </div>
+
+        <h2>
+          Digital Marketing Services
+        </h2>
+
+        <p>
+          From campaign strategy and advertising to tracking,
+          optimization and conversion-focused marketing.
+        </p>
+
+      </div>
+
+
+      <div class="services-grid">
+
+
+        <!-- GOOGLE ADS -->
+
+        <div class="service-card" style="--service-color:#4285F4">
+
+          <div class="service-icon">
+
+            <img
+              src="https://cdn.simpleicons.org/googleads/4285F4"
+              alt="Google Ads"
+            >
+
+          </div>
+
+          <h3>Google Ads</h3>
+
+          <p>
+            Search campaigns, conversion-focused advertising,
+            keyword strategy, bidding and campaign optimization.
+          </p>
+
+        </div>
+
+
+        <!-- META ADS -->
+
+        <div class="service-card" style="--service-color:#0866FF">
+
+          <div class="service-icon">
+
+            <img
+              src="https://cdn.simpleicons.org/meta/0866FF"
+              alt="Meta Ads"
+            >
+
+          </div>
+
+          <h3>Meta Ads</h3>
+
+          <p>
+            Facebook and Instagram advertising for lead generation,
+            sales, retargeting and audience growth.
+          </p>
+
+        </div>
+
+
+        <!-- ECOMMERCE -->
+
+        <div class="service-card" style="--service-color:#95BF47">
+
+          <div class="service-icon">
+
+            <img
+              src="https://cdn.simpleicons.org/shopify/95BF47"
+              alt="E-commerce"
+            >
+
+          </div>
+
+          <h3>E-commerce Marketing</h3>
+
+          <p>
+            Product campaigns, sales funnels, product tracking,
+            retargeting and performance optimization.
+          </p>
+
+        </div>
+
+
+        <!-- LEAD GENERATION -->
+
+        <div class="service-card" style="--service-color:#22C55E">
+
+          <div class="service-icon">
+
+            <img
+              src="https://cdn.simpleicons.org/hubspot/FF7A59"
+              alt="Lead Generation"
+            >
+
+          </div>
+
+          <h3>Lead Generation</h3>
+
+          <p>
+            Targeted campaigns designed to generate qualified leads
+            for service-based businesses.
+          </p>
+
+        </div>
+
+
+        <!-- TRACKING -->
+
+        <div class="service-card" style="--service-color:#F9AB00">
+
+          <div class="service-icon">
+
+            <img
+              src="https://cdn.simpleicons.org/googletagmanager/246FDB"
+              alt="Google Tag Manager"
+            >
+
+          </div>
+
+          <h3>Tracking & Analytics</h3>
+
+          <p>
+            GA4, Google Tag Manager, Meta Pixel, conversion events
+            and performance tracking setup.
+          </p>
+
+        </div>
+
+
+        <!-- SEO -->
+
+        <div class="service-card" style="--service-color:#34A853">
+
+          <div class="service-icon">
+
+            <img
+              src="https://cdn.simpleicons.org/googlesearchconsole/458CF5"
+              alt="SEO"
+            >
+
+          </div>
+
+          <h3>SEO</h3>
+
+          <p>
+            Technical, on-page and local SEO strategies designed
+            to improve visibility and organic growth.
+          </p>
+
+        </div>
+
+
+        <!-- CRO -->
+
+        <div class="service-card" style="--service-color:#8B5CF6">
+
+          <div class="service-icon">
+
+            <img
+              src="https://cdn.simpleicons.org/hotjar/FF3C00"
+              alt="CRO"
+            >
+
+          </div>
+
+          <h3>CRO</h3>
+
+          <p>
+            Landing page, user journey, CTA and conversion optimization
+            to improve the value of existing traffic.
+          </p>
+
+        </div>
+
+
+        <!-- TIKTOK -->
+
+        <div class="service-card" style="--service-color:#00F2EA">
+
+          <div class="service-icon">
+
+            <img
+              src="https://cdn.simpleicons.org/tiktok/FFFFFF"
+              alt="TikTok Ads"
+            >
+
+          </div>
+
+          <h3>TikTok Ads</h3>
+
+          <p>
+            Short-form creative advertising and audience targeting
+            for TikTok campaigns.
+          </p>
+
+        </div>
+
+
+        <!-- MARKETING STRATEGY -->
+
+        <div class="service-card" style="--service-color:#FF4ECD">
+
+          <div class="service-icon">
+
+            <img
+              src="https://cdn.simpleicons.org/googleanalytics/F9AB00"
+              alt="Marketing Analytics"
+            >
+
+          </div>
+
+          <h3>Marketing Strategy</h3>
+
+          <p>
+            Campaign planning, audience research, funnel strategy,
+            testing and performance optimization.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SKILLS -->
+
+  <section id="skills">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          My Toolkit
+        </div>
+
+        <h2>
+          Platforms & Marketing Skills
+        </h2>
+
+      </div>
+
+
+      <div class="skills">
+
+        <div class="skill">
+          <img src="https://cdn.simpleicons.org/googleads/4285F4">
+          Google Ads
+        </div>
+
+        <div class="skill">
+          <img src="https://cdn.simpleicons.org/meta/0866FF">
+          Meta Ads
+        </div>
+
+        <div class="skill">
+          <img src="https://cdn.simpleicons.org/tiktok/FFFFFF">
+          TikTok Ads
+        </div>
+
+        <div class="skill">
+          <img src="https://cdn.simpleicons.org/googleanalytics/F9AB00">
+          GA4
+        </div>
+
+        <div class="skill">
+          <img src="https://cdn.simpleicons.org/googletagmanager/246FDB">
+          Google Tag Manager
+        </div>
+
+        <div class="skill">
+          <img src="https://cdn.simpleicons.org/googlesearchconsole/458CF5">
+          SEO
+        </div>
+
+        <div class="skill">
+          <img src="https://cdn.simpleicons.org/shopify/95BF47">
+          Shopify
+        </div>
+
+        <div class="skill">
+          <img src="https://cdn.simpleicons.org/woocommerce/96588A">
+          WooCommerce
+        </div>
+
+        <div class="skill">
+          <img src="https://cdn.simpleicons.org/wordpress/21759B">
+          WordPress
+        </div>
+
+        <div class="skill">
+          <img src="https://cdn.simpleicons.org/hubspot/FF7A59">
+          CRM
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CASE STUDIES -->
+
+  <section id="work">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          Experience
+        </div>
+
+        <h2>
+          What I Work With
+        </h2>
+
+        <p>
+          Experience across different business models and marketing goals.
+        </p>
+
+      </div>
+
+
+      <div class="case-grid">
+
+        <div class="case-card">
+
+          <div class="case-tag">
+            E-commerce
+          </div>
+
+          <h3>
+            Product & Sales Campaigns
+          </h3>
+
+          <p>
+            Product-focused advertising, purchase tracking,
+            retargeting and campaign optimization for online stores.
+          </p>
+
+        </div>
+
+
+        <div class="case-card">
+
+          <div class="case-tag">
+            Lead Generation
+          </div>
+
+          <h3>
+            Qualified Lead Campaigns
+          </h3>
+
+          <p>
+            Building targeted campaigns for businesses that need
+            calls, forms, messages and qualified prospects.
+          </p>
+
+        </div>
+
+
+        <div class="case-card">
+
+          <div class="case-tag">
+            Analytics
+          </div>
+
+          <h3>
+            Tracking & Measurement
+          </h3>
+
+          <p>
+            Setting up conversion tracking and analytics so campaign
+            performance can be measured accurately.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROCESS -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          My Process
+        </div>
+
+        <h2>
+          Strategy Before Spending.
+        </h2>
+
+      </div>
+
+
+      <div class="process-grid">
+
+        <div class="process-card">
+
+          <div class="process-number">01</div>
+
+          <h3>Research</h3>
+
+          <p>
+            Understand the business, audience, offer and competition.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <div class="process-number">02</div>
+
+          <h3>Strategy</h3>
+
+          <p>
+            Build the campaign structure, targeting and marketing funnel.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <div class="process-number">03</div>
+
+          <h3>Launch</h3>
+
+          <p>
+            Launch campaigns with proper tracking and conversion setup.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <div class="process-number">04</div>
+
+          <h3>Optimize</h3>
+
+          <p>
+            Analyze data, test different approaches and continuously optimize.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="cta">
+
+        <h2>
+          Have a Business to Grow?
+        </h2>
+
+        <p>
+          Let's discuss your goals and build a marketing strategy
+          around your business.
+        </p>
+
+        <a href="#contact" class="btn btn-primary">
+          Let's Work Together →
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          Contact
+        </div>
+
+        <h2>
+          Let's Start a Conversation.
+        </h2>
+
+      </div>
+
+
+      <div class="contact-grid">
+
+        <div class="contact-card">
+
+          <small>Email</small>
+
+          <strong>
+            your@email.com
+          </strong>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <small>WhatsApp</small>
+
+          <strong>
+            +880 1XXXXXXXXX
+          </strong>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <small>Facebook</small>
+
+          <strong>
+            facebook.com/yourprofile
+          </strong>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container footer-inner">
+
+      <div>
+        © 2026 Mahadi Hasan. All Rights Reserved.
+      </div>
+
+      <div class="socials">
+
+        <a href="#" aria-label="Facebook">
+
+          <img
+            src="https://cdn.simpleicons.org/facebook/1877F2"
+            alt="Facebook"
+          >
+
+        </a>
+
+        <a href="#" aria-label="LinkedIn">
+
+          <img
+            src="https://cdn.simpleicons.org/linkedin/0A66C2"
+            alt="LinkedIn"
+          >
+
+        </a>
+
+        <a href="#" aria-label="Instagram">
+
+          <img
+            src="https://cdn.simpleicons.org/instagram/E4405F"
+            alt="Instagram"
+          >
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
